@@ -19,7 +19,7 @@ export default function ContactForm() {
     try {
       // Track to Google Sheet
       const sheetUrl = `${WEBHOOK_URL}?phone=${encodeURIComponent(formData.phone)}&page=${PAGE_ID}&project=${encodeURIComponent(formData.project || "غير محدد")}`
-      fetch(sheetUrl, { method: "GET", mode: "no-cors" }).catch(() => {})
+      const img = new Image(); img.src = sheetUrl
 
       // Send to FormSubmit
       const response = await fetch("https://formsubmit.co/ajax/Leads@grandeur-spaces.com", {

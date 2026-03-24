@@ -9,7 +9,7 @@ export default function WhatsAppWidget() {
 
   const handleClick = () => {
     const url = `${WEBHOOK_URL}?phone=غير+محدد&page=${PAGE_ID}&project=general-float`
-    fetch(url, { method: "GET", mode: "no-cors" }).catch(() => {})
+    const img = new Image(); img.src = url
     window.open(`https://wa.me/${phoneNumber.replace(/[^0-9]/g, "")}?text=${message}`, "_blank")
   }
 
