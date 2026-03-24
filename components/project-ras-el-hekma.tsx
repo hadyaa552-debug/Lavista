@@ -24,15 +24,13 @@ export default function ProjectRasElHekma() {
           <p className="text-xl text-muted-foreground">أجمل شواطئ مصر • إطلالة بحر مباشرة</p>
         </div>
 
-        {/* Main Image Placeholder */}
-        <div className="relative aspect-[16/7] overflow-hidden shadow-2xl mb-12 bg-muted/30 flex items-center justify-center">
-          <div className="text-center text-muted-foreground">
-            <p className="text-6xl mb-4">🏖️</p>
-            <p className="text-lg font-medium">LA VISTA Ras El Hekma</p>
-          </div>
-          <div className="absolute bottom-8 right-8 text-right text-foreground">
+        {/* Main Image */}
+        <div className="relative aspect-[16/7] overflow-hidden shadow-2xl mb-12">
+          <img src="https://lavista.com.eg/wp-content/uploads/2024/08/ras2.jpg" alt="Ras El Hekma" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          <div className="absolute bottom-8 right-8 text-right text-white">
             <p className="text-3xl font-bold">Ras El Hekma</p>
-            <p className="text-muted-foreground">الساحل الشمالي – رأس الحكمة</p>
+            <p className="text-white/80">الساحل الشمالي – رأس الحكمة</p>
           </div>
         </div>
 
@@ -75,6 +73,19 @@ export default function ProjectRasElHekma() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
           {["شاطئ رملي طبيعي", "بحيرات كريستالية", "شلالات مائية", "سبا عالمي وجيم", "منطقة تجارية", "مسارات شاطئية", "ملاعب رياضية", "جراجات خاصة"].map((f, i) => (
             <div key={i} className="bg-background p-4 text-center text-sm text-muted-foreground font-medium border border-border">{f}</div>
+          ))}
+        </div>
+
+        {/* Image Grid */}
+        <div className="grid grid-cols-3 gap-3 mb-10">
+          {[
+            "https://lavista.com.eg/wp-content/uploads/2024/08/ras1.jpg",
+            "https://lavista.com.eg/wp-content/uploads/2023/08/hikma10.jpg",
+            "https://lavista.com.eg/wp-content/uploads/2024/08/ras-3.jpg",
+          ].map((src, i) => (
+            <div key={i} className="relative aspect-[4/3] overflow-hidden">
+              <img src={src} alt="Ras El Hekma" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
           ))}
         </div>
 

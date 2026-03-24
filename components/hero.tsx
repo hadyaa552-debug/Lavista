@@ -11,7 +11,7 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
+      style={{ backgroundImage: "url('https://lavista.com.eg/wp-content/uploads/2024/08/bay-east-3.jpg')" }}>
       <div className="absolute inset-0 bg-black/60" />
       <div className={`relative z-10 text-center px-4 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-4">لا فيستا للتطوير العقاري</p>

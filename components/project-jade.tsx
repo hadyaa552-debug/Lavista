@@ -24,15 +24,13 @@ export default function ProjectJade() {
           <p className="text-xl text-muted-foreground">طرح جديد • ١٠٠ فدان من الرقي والخصوصية</p>
         </div>
 
-        {/* Main Image Placeholder */}
-        <div className="relative aspect-[16/7] overflow-hidden shadow-2xl mb-12 bg-muted/30 flex items-center justify-center">
-          <div className="text-center text-muted-foreground">
-            <p className="text-6xl mb-4">🏛️</p>
-            <p className="text-lg font-medium">El Patio Jade</p>
-          </div>
-          <div className="absolute bottom-8 right-8 text-right text-foreground">
+        {/* Main Image */}
+        <div className="relative aspect-[16/7] overflow-hidden shadow-2xl mb-12">
+          <img src="https://lavista.com.eg/wp-content/uploads/2026/01/bg.jpg" alt="El Patio Jade" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          <div className="absolute bottom-8 right-8 text-right text-white">
             <p className="text-3xl font-bold">El Patio Jade</p>
-            <p className="text-muted-foreground">امتداد La Vista City – العاصمة الإدارية</p>
+            <p className="text-white/80">امتداد La Vista City – العاصمة الإدارية</p>
           </div>
         </div>
 

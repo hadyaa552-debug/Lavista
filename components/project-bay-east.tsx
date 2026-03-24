@@ -24,15 +24,13 @@ export default function ProjectBayEast() {
           <p className="text-xl text-muted-foreground">بالقرب من العلمين الجديدة • إطلالة بحر مباشرة</p>
         </div>
 
-        {/* Main Image Placeholder */}
-        <div className="relative aspect-[16/7] overflow-hidden shadow-2xl mb-12 bg-muted/20 flex items-center justify-center">
-          <div className="text-center text-muted-foreground">
-            <p className="text-6xl mb-4">🌊</p>
-            <p className="text-lg font-medium">LA VISTA Bay East</p>
-          </div>
-          <div className="absolute bottom-8 right-8 text-right text-foreground">
+        {/* Main Image */}
+        <div className="relative aspect-[16/7] overflow-hidden shadow-2xl mb-12">
+          <img src="https://lavista.com.eg/wp-content/uploads/2024/08/bay-east-3.jpg" alt="Bay East" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          <div className="absolute bottom-8 right-8 text-right text-white">
             <p className="text-3xl font-bold">Bay East</p>
-            <p className="text-muted-foreground">الكيلو ١٦٧ – طريق الإسكندرية مطروح</p>
+            <p className="text-white/80">الكيلو ١٦٧ – طريق الإسكندرية مطروح</p>
           </div>
         </div>
 
@@ -75,6 +73,19 @@ export default function ProjectBayEast() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
           {["شاطئ رملي ١٢٠٠ م", "بحيرات كريستالية", "شلالات مائية", "نادي صحي وسبا", "منطقة تجارية", "مسارات شاطئية", "ملاعب رياضية", "جراجات خاصة"].map((f, i) => (
             <div key={i} className="bg-muted/30 p-4 text-center text-sm text-muted-foreground font-medium">{f}</div>
+          ))}
+        </div>
+
+        {/* Image Grid */}
+        <div className="grid grid-cols-3 gap-3 mb-10">
+          {[
+            "https://lavista.com.eg/wp-content/uploads/2024/08/bay-east-2.jpg",
+            "https://lavista.com.eg/wp-content/uploads/2024/08/bay-east.jpg",
+            "https://lavista.com.eg/wp-content/uploads/2023/10/Screen-Shot-2023-10-10-at-6.29.33-AM.png",
+          ].map((src, i) => (
+            <div key={i} className="relative aspect-[4/3] overflow-hidden">
+              <img src={src} alt="Bay East" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
           ))}
         </div>
 
