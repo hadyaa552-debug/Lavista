@@ -21,8 +21,8 @@ export default function Home() {
       <ProjectRasElHekma />
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 lg:py-32 bg-muted/30">
-        <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
+      <section id="contact" className="py-12 lg:py-16 bg-muted/30">
+        <div className="w-full px-4 lg:px-8 max-w-screen-xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">تواصل معنا</p>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">نحن هنا لمساعدتك</h2>

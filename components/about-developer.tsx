@@ -9,8 +9,8 @@ export default function AboutDeveloper() {
   ]
 
   return (
-    <section id="developer" className="py-20 lg:py-32 bg-background">
-      <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
+    <section id="developer" className="py-12 lg:py-16 bg-background">
+      <div className="w-full px-4 lg:px-8 max-w-screen-xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">عن المطور</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">لا فيستا للتطوير العقاري</h2>

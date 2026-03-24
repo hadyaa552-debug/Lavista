@@ -14,18 +14,18 @@ export default function ProjectJade() {
   }
 
   return (
-    <section id="jade" className="py-20 lg:py-32 bg-muted/20">
-      <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
+    <section id="jade" className="py-12 lg:py-16 bg-muted/20">
+      <div className="w-full px-4 lg:px-8 max-w-screen-xl mx-auto">
 
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <span className="inline-block bg-primary/10 text-primary text-sm font-semibold px-4 py-2 mb-4">العاصمة الإدارية الجديدة</span>
           <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-4">El Patio Jade</h2>
           <p className="text-xl text-muted-foreground">طرح جديد • ١٠٠ فدان من الرقي والخصوصية</p>
         </div>
 
         {/* Main Image */}
-        <div className="relative aspect-[16/7] overflow-hidden shadow-2xl mb-12">
+        <div className="relative aspect-[16/7] overflow-hidden shadow-2xl mb-6">
           <img src="https://lavista.com.eg/wp-content/uploads/2026/01/bg.jpg" alt="El Patio Jade" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           <div className="absolute bottom-8 right-8 text-right text-white">
@@ -35,7 +35,7 @@ export default function ProjectJade() {
         </div>
 
         {/* Stats + Details */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-6">
           <div className="text-right space-y-4">
             <p className="text-lg text-muted-foreground leading-relaxed">
               مجتمع سكني متكامل يتميز بالخصوصية والمساحات الخضراء الواسعة والتصميمات العصرية. نسبة مباني ١٤٪ فقط مع كلوب هاوس ١٠ أفدنة ومسطحات مائية مميزة.
